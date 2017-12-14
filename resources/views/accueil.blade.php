@@ -2,7 +2,7 @@
 @section('title', 'Accueil')
 @section('main')
 	<h1>accueil</h1>
-	<table class="table table-dark">
+	<table class="table ">
 		<thead class="thead-dark">
 			<th>Nom</th>
 			<th>Taille</th>
@@ -15,7 +15,7 @@
 			@foreach ($players as $player)
 				<tr>
 					<td> {{ $player->name }}</td>
-	        <td> {{ $player->size }}</td>
+	        <td> {{ $player->size }}cm</td>
 	        <td> {{ $player->age }}</td>
 	        <td> {{ $player->team->team }}</td>
 	        <td>
@@ -35,8 +35,8 @@
 								 <button type="submit" class="btn btn-outline-danger delete-btn">delete</button>
 							</form>
 					</td>
-				</tr>
 			@endforeach
+		</tr>
 		</tbody>
 	</table>
 @endsection

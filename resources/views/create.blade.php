@@ -1,31 +1,31 @@
 @extends('layouts.base')
 @section('title', 'Accueil')
 @section('main')
-	<h1>creation</h1>
-  <div class="formulaire background">
+	<h1 id="encre">ajout</h1>
+  <div class="">
 	    {!! Form::open(['url' => '/player/insert']) !!}
-	      <div >
+	      <div class="form-group">
 	        {{{ Form::label('Nom :') }}}
 	        {{{ Form::text('name') }}}
 	      </div>
-	      <div >
+	      <div class="form-group">
 	        {{{ Form::label('Taille (en cm) :') }}}
 	        {{{ Form::number('size') }}}
 	      </div>
-	      <div >
+	      <div class="form-group">
 	        {{{ Form::label('Age:') }}}
 	        {{{ Form::number('age') }}}
 	      </div>
-	      <div >
+	      <div class="form-group">
 	        {{{ Form::label('equipe') }}}
 	        {{{ Form::select('team', $teams) }}}
 	      </div>
-	      <div >
+	      <div class="form-group">
 	        {{{ Form::label('Poste :') }}}
 	        {{{ Form::select('post[]', $posts, 0, ['multiple' => true]) }}}
 	      </div>
-	      <div >
-	        {{{ Form::submit('Insérer un joueur') }}}
+	      <div class="form-group">
+	        {{{ Form::submit('Insérer un joueur', ['class' => 'btn btn-dark'])}}}
 	      </div>
 	    {!! Form::close() !!}
 @endsection

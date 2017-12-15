@@ -1,7 +1,7 @@
 @extends('layouts.base')
 @section('title', 'Accueil')
 @section('main')
-	<h1>update</h1>
+	<h1 id="encre">update</h1>
   <div class="">
 	    {!! Form::open(['url' => '/player/update']) !!}
       {{{ Form::hidden('id', $player->id)}}}
@@ -16,6 +16,10 @@
 	      <div class="form-group">
 	        {{{ Form::label('Age:') }}}
 	        {{{ Form::number('age', $player->age) }}}
+	      </div>
+	      <div class="form-group">
+	        {{{ Form::label('Point/Match:') }}}
+	        {{{ Form::number('point', $player->point, ['step'=>'any']) }}}
 	      </div>
 	      <div class="form-group">
 	        {{{ Form::label('Equipe') }}}

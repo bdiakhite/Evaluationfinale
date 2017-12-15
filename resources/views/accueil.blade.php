@@ -1,22 +1,32 @@
 @extends('layouts.base')
 @section('title', 'Accueil')
 @section('main')
-	<h1>accueil</h1>
-	<table class="table ">
+	<h1 id="encre">accueil</h1>
+	<p>Bonjour voici le classement des meilleurs joueur de cette saison NBA Selon la moyenne de leur nombre de point par match.</p>
+	<input type="text" class="form-control form-control-lg"  id="myInput" onkeyup="search()" placeholder="recherche par nom">
+	<div class="konami hide">
+		<img src="./css/img/moi.gif" alt="moi">
+		<img src="./css/img/val.gif" alt="moi">
+	</div>
+	<table id="myTable" class="table ">
 		<thead class="thead-dark">
+		 <th>rank</th>
 			<th>Nom</th>
 			<th>Taille</th>
 			<th>Age</th>
+			<th>point/match</th>
 			<th>Equipe</th>
 			<th>Poste</th>
 			<th colspan="2">option</th>
 		</thead>
-		<tbody>
+		<tbody  id="myTable" >
 			@foreach ($players as $player)
 				<tr>
+					<td>{{++$a}}</td>
 					<td> {{ $player->name }}</td>
 	        <td> {{ $player->size }}cm</td>
 	        <td> {{ $player->age }}</td>
+	        <td> {{ $player->point }}</td>
 	        <td> {{ $player->team->team }}</td>
 	        <td>
 	          @foreach ($player->posts as $post)

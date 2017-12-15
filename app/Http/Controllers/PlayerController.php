@@ -16,6 +16,7 @@ class PlayerController extends Controller
     	 $player->name = $request->name;
        $player->size = $request->size;
        $player->age = $request->age;
+       $player->point = $request->point;
        $player->team_id = $request->team;
        $player->save();
        $player->posts()->attach($request->post);
@@ -49,6 +50,7 @@ class PlayerController extends Controller
       $player->name = $request->name;
       $player->size = $request->size;
       $player->age = $request->age;
+      $player->point = $request->point;
       $player->team_id = $request->team;
       $player->posts()->detach();
       $player->posts()->attach($request->post);

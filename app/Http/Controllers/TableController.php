@@ -12,7 +12,8 @@ class TableController extends Controller
 {
   public function index()
   {
-    $players = Player::all();
+    $players = Player::paginate(2);
+    $players->withPath('custom/url');
     return view('table', ['players' => $players]);
   }
 }

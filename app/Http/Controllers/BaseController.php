@@ -11,8 +11,8 @@ class BaseController extends Controller
 {
     public function index()
     {
-      $players = Player::all();
-
-      return view('accueil', ['players'=>$players]);
+      $players = Player::orderBy('point', 'desc')->get();
+      $a = 0;
+      return view('accueil', ['players'=>$players, 'a'=>$a]);
     }
 }

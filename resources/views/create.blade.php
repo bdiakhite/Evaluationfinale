@@ -17,6 +17,10 @@
 	        {{{ Form::number('age') }}}
 	      </div>
 	      <div class="form-group">
+	        {{{ Form::label('point/match:') }}}
+	        {{{ Form::number('point', 'point', ['step'=>'any']) }}}
+	      </div>
+	      <div class="form-group">
 	        {{{ Form::label('equipe') }}}
 	        {{{ Form::select('team', $teams) }}}
 	      </div>

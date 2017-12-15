@@ -23,4 +23,8 @@ Pour le css j'ai fait le choix de faire une application agreable a l'oeil et ji 
 
 ## Conclusion
 
+<<<<<<< HEAD
 Et pour finir j'ai pris le temps de rajouter mon grin de sel (comme si le theme basket-ball de suffisait pas ^^) jai rajouter un konamicode que je te laisserai decouvrir ps: Tu aura juste a appuyer sur la touche espace pour le refaire disparaitre (ne t'inquiete pas les personne conscerné mon donné leur permission). 
+=======
+Et pour finir j'ai pris le temps de rajouter mon grin de sel (comme si le theme basket-ball de suffisait pas ^^) jai rajouter un konamicode que je te laisserai decouvrir ps: Tu aura juste a appuyer sur la touche espace pour le refaire disparaitre (ne t'inquiete pas les personne conscerné mon donné leur permission).
+>>>>>>> prod

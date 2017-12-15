@@ -33,7 +33,7 @@ header{
 }
 table{
   text-align: center;
-
+  min-width: 600px;
 }
 form{
   display:flex;
